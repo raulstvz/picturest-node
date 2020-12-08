@@ -1,169 +1,66 @@
-[
-  {
-    "id": 1,
-    "firstName": "Cass",
-    "lastName": "Loughrey",
-    "email": "cloughrey0@mozilla.org",
-    "avatar": "https://robohash.org/consecteturnobisdolores.bmp?size=50x50&set=set1",
-    "password": "81DvRN",
-    "following": []
-  },
-  {
-    "id": 2,
-    "firstName": "Morley",
-    "lastName": "Pales",
-    "email": "mpales1@auda.org.au",
-    "password": "LJbrpySNi7",
-    "following": []
-  },
-  {
-    "id": 3,
-    "firstName": "Timmi",
-    "lastName": "Rothert",
-    "email": "trothert2@marketwatch.com",
-    "password": "uegwgfc0Tv8",
-    "following": []
-  },
-  {
-    "id": 4,
-    "firstName": "Kele",
-    "lastName": "Marling",
-    "email": "kmarling3@360.cn",
-    "avatar": "https://robohash.org/consequaturquieveniet.png?size=50x50&set=set1",
-    "password": "x1K222B5um",
-    "following": []
-  },
-  {
-    "id": 5,
-    "firstName": "Candis",
-    "lastName": "Strangward",
-    "email": "cstrangward4@nbcnews.com",
-    "password": "WbWMpcHURU",
-    "following": []
-  },
-  {
-    "id": 6,
-    "firstName": "Lind",
-    "lastName": "McGrale",
-    "email": "lmcgrale5@com.com",
-    "password": "3WUGGNVi",
-    "following": []
-  },
-  {
-    "id": 7,
-    "firstName": "Lalo",
-    "lastName": "Scorah",
-    "email": "lscorah6@howstuffworks.com",
-    "password": "ST7NLy",
-    "following": []
-  },
-  {
-    "id": 8,
-    "firstName": "Vidovik",
-    "lastName": "Dallinder",
-    "email": "vdallinder7@tamu.edu",
-    "avatar": "https://robohash.org/quihicsaepe.jpg?size=50x50&set=set1",
-    "password": "G8ergF",
-    "following": []
-  },
-  {
-    "id": 9,
-    "firstName": "Luther",
-    "lastName": "Huguet",
-    "email": "lhuguet8@mit.edu",
-    "password": "xzDUzoj",
-    "following": []
-  },
-  {
-    "id": 10,
-    "firstName": "Minnnie",
-    "lastName": "Danko",
-    "email": "mdanko9@cbc.ca",
-    "avatar": "https://robohash.org/nesciuntestrem.png?size=50x50&set=set1",
-    "password": "OEuEscs",
-    "following": []
-  },
-  {
-    "id": 11,
-    "firstName": "Rycca",
-    "lastName": "Jobbing",
-    "email": "rjobbinga@theatlantic.com",
-    "password": "a41YUJ4e",
-    "following": []
-  },
-  {
-    "id": 12,
-    "firstName": "Jewel",
-    "lastName": "Frank",
-    "email": "jfrankb@pcworld.com",
-    "password": "SAIFl4DVmQU2",
-    "following": []
-  },
-  {
-    "id": 13,
-    "firstName": "Harlin",
-    "lastName": "Trahmel",
-    "email": "htrahmelc@vk.com",
-    "avatar": "https://robohash.org/hicsitet.bmp?size=50x50&set=set1",
-    "password": "O3j0GpCT7",
-    "following": []
-  },
-  {
-    "id": 14,
-    "firstName": "Weylin",
-    "lastName": "Panton",
-    "email": "wpantond@sciencedirect.com",
-    "password": "PER0HD",
-    "following": []
-  },
-  {
-    "id": 15,
-    "firstName": "Catherina",
-    "lastName": "Merry",
-    "email": "cmerrye@nature.com",
-    "password": "DRI0n6",
-    "following": []
-  },
-  {
-    "id": 16,
-    "firstName": "Margi",
-    "lastName": "Sanchez",
-    "email": "msanchezf@vkontakte.ru",
-    "avatar": "https://robohash.org/eligendieumeaque.jpg?size=50x50&set=set1",
-    "password": "QkoO2kiYa",
-    "following": []
-  },
-  {
-    "id": 17,
-    "firstName": "Emmery",
-    "lastName": "Chidlow",
-    "email": "echidlowg@noaa.gov",
-    "avatar": "https://robohash.org/eumevenietnobis.bmp?size=50x50&set=set1",
-    "password": "6URz2mr",
-    "following": []
-  },
-  {
-    "id": 18,
-    "firstName": "Marty",
-    "lastName": "Delve",
-    "email": "mdelveh@hp.com",
-    "password": "hxQqbiqa",
-    "following": []
-  },
-  {
-    "id": 19,
-    "firstName": "Sherie",
-    "lastName": "Warland",
-    "email": "swarlandi@histats.com",
-    "password": "eJcf9NrKe",
-    "following": []
-  },
-  {
-    "id": 20,
-    "firstName": "Staci",
-    "lastName": "Achromov",
-    "email": "sachromovj@nasa.gov",
-    "password": "5AgZXNFKFcK",
-    "following": []
-  }
+[{
+        "id": 1,
+        "email": "emma@example.com",
+        "password": "asdas123e",
+        "firstName": "Emma",
+        "lastName": "O'Connor",
+        "userName": "emma012",
+        "avatar": "https://images.generated.photos/WhE7pyMl4sL7-xz1aNoyjqDXc3-jTcu3iAATIYtbTAk/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAxMzM2NzcuanBn.jpg",
+        "followers": [
+            2, 5
+        ],
+        "boards": []
+    },
+    {
+        "id": 2,
+        "email": "helena@example.com",
+        "password": "KOJhiojasd1",
+        "firstName": "Helena",
+        "lastName": "Portillo",
+        "userName": "porti_lo12",
+        "avatar": "https://images.generated.photos/7Yl8Hn3EBxuNln573bI1U2j_CpQ7CQce_h-gfUwuBaE/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA3NTk2NjguanBn.jpg",
+        "followers": [
+            1, 3
+        ],
+        "boards": []
+    },
+    {
+        "id": 3,
+        "email": "itsmike@example.com",
+        "password": "iou2349087",
+        "firstName": "Mike",
+        "lastName": "Stunt",
+        "userName": "theonemike",
+        "avatar": "https://images.generated.photos/Lt-PLbX2QEJOukPQflk4-pLahX9maCVafCp9IO0ciQU/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAxNjkzMDVfMDQ2/MTU3M18wNjUyNTYy/LmpwZw.jpg",
+        "followers": [
+            1, 4, 5
+        ],
+        "boards": []
+    },
+    {
+        "id": 4,
+        "email": "leonard_8a@example.com",
+        "password": "908908leo",
+        "firstName": "Leonard",
+        "lastName": "Ochoa",
+        "userName": "8a_leo",
+        "avatar": "https://images.generated.photos/xGzWYSP6_0UxGIL5qpWHKLtP5PPW7qVs6WPCFinJE_M/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAxMDUxMzVfMDE2/MzMxN18wMTk5NDUy/LmpwZw.jpg",
+        "followers": [
+            2, 3, 5
+        ],
+        "boards": []
+    },
+    {
+        "id": 5,
+        "email": "dong_mei@example.com",
+        "password": "81234_aa",
+        "firstName": "Dongmei",
+        "lastName": "Shan",
+        "userName": "Dong_09",
+        "avatar": "https://images.generated.photos/RO0LUEezkY8rL-DOv3_cI2eXd61oE7XqiPWyIiIqETY/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA4MDUxNzRfMDcy/NDY4NF8wNDE2MzQ1/LmpwZw.jpg",
+        "followers": [
+            2, 4
+        ],
+        "boards": []
+    }
 ]
