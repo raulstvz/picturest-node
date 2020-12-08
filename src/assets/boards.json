@@ -2,49 +2,49 @@
   {
     "id": 1,
     "author": "",
-    "title": "Board 1",
+    "title": "Board One",
     "collaborators": [],
     "pins": [1, 2, 3, 6, 10]
   },
   {
     "id": 2,
     "author": "",
-    "title": "Board 2",
+    "title": "Board Two",
     "collaborators": [],
     "pins": [1, 7, 12, 3, 4]
   },
   {
     "id": 3,
     "author": "",
-    "title": "Board 3",
+    "title": "Board Three",
     "collaborators": [],
     "pins": [2, 3, 4]
   },
   {
     "id": 4,
     "author": "",
-    "title": "Board 4",
+    "title": "Board Four",
     "collaborators": [],
     "pins": [2, 3, 4]
   },
   {
     "id": 5,
     "author": "",
-    "title": "Board 5",
+    "title": "Board Five",
     "collaborators": [],
     "pins": [2, 3, 4]
   },
   {
     "id": 6,
     "author": "",
-    "title": "Board 6",
+    "title": "Board Six",
     "collaborators": [],
     "pins": [2, 3, 4, 10, 15, 12, 14, 8, 11]
   },
   {
     "id": 7,
     "author": "",
-    "title": "Board 7",
+    "title": "Board Seven",
     "collaborators": [],
     "pins": [2, 3, 4]
   }

@@ -6,7 +6,7 @@ descripcion: opcional
 comentarios: array
 autor: obligatorio (objeto usuario)
 
-ESQUEMA ELEMENTOS DEL TABLERO
+ESQUEMA ELEMENTOS DEL BOARD
 usuario: obligatorio (objeto usuario)
 colaboradores: opcional
 nombre: obligatorio (objeto usuario)

@@ -13,5 +13,3 @@ router.route('/:id')
     .delete(pinsController.remove)
 
 module.exports = router;
-
-//TODO: hacer lo mismo para boards y para users
