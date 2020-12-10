@@ -53,5 +53,38 @@
     "avatar": "https://images.generated.photos/RO0LUEezkY8rL-DOv3_cI2eXd61oE7XqiPWyIiIqETY/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA4MDUxNzRfMDcy/NDY4NF8wNDE2MzQ1/LmpwZw.jpg",
     "followers": [2, 4],
     "boards": []
+  },
+  {
+    "id": 6,
+    "email": "john_stuart@example.com",
+    "password": "stu4RT@80",
+    "firstName": "John",
+    "lastName": "Stuart",
+    "userName": "stuuuuart",
+    "avatar": "https://images.generated.photos/IJCijEWnnmwqKcCy2GhR7ml4b5VkiIvBXqRhCJWQ3IA/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA1ODYzNTYuanBn.jpg",
+    "followers": [1, 2, 3, 4],
+    "boards": []
+  },
+  {
+    "id": 6,
+    "email": "mmgomez_567@gmail.com",
+    "password": "567_gomezm",
+    "firstName": "Marta",
+    "lastName": "Gomez",
+    "userName": "mta90Gomez",
+    "avatar": "https://images.generated.photos/1uQGz00w3F9n7LwhESXi0K4pMQ3F91FzBSVg8dAWXcc/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAyNjc1NDUuanBn.jpg",
+    "followers": [2, 3, 4, 6, 7],
+    "boards": []
+  },
+  {
+    "id": 7,
+    "email": "allen_m4rcus@gmail.com",
+    "password": "ma4llen",
+    "firstName": "Marcus",
+    "lastName": "Allen",
+    "userName": "marcus_allen4",
+    "avatar": "https://images.generated.photos/B-WjBJr6a9UQQkvLFPfQi7r4oqZIGWJcxTk4X_Lsm4Y/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yy/XzA2OTQ5OTIuanBn.jpg",
+    "followers": [1, 2, 5],
+    "boards": []
   }
 ]
