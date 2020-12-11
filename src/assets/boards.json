@@ -1,58 +1,110 @@
 [
-  {
-    "id": 1,
-    "author": "",
-    "title": "Red Green Paper",
-    "collaborators": [],
-    "pins": [1, 2, 3, 6, 10]
-  },
-  {
-    "id": 2,
-    "author": "",
-    "title": "Canvas for life",
-    "collaborators": [],
-    "pins": [1, 7, 12, 3, 4]
-  },
-  {
-    "id": 3,
-    "author": "",
-    "title": "Bearded animals",
-    "collaborators": [],
-    "pins": [2, 3, 4]
-  },
-  {
-    "id": 4,
-    "author": "",
-    "title": "Creek trekking",
-    "collaborators": [],
-    "pins": [2, 3, 4]
-  },
-  {
-    "id": 5,
-    "author": "",
-    "title": "Second weekend of July",
-    "collaborators": [],
-    "pins": [2, 3, 4]
-  },
-  {
-    "id": 6,
-    "author": "",
-    "title": "Seeking water mammals",
-    "collaborators": [],
-    "pins": [2, 3, 4, 10, 15, 12, 14, 8, 11]
-  },
-  {
-    "id": 7,
-    "author": "",
-    "title": "Coding in Nuclio",
-    "collaborators": [],
-    "pins": [2, 3, 4]
-  },
-  {
-    "author": 3,
-    "title": "TestBoard",
-    "description": "TestBoard",
-    "collaborators": [],
-    "id": 8
-  }
+    {
+        "id": 1,
+        "author": "",
+        "title": "Red Green Paper",
+        "collaborators": [],
+        "pins": [
+            1,
+            2,
+            3,
+            6,
+            10
+        ]
+    },
+    {
+        "id": 2,
+        "author": "",
+        "title": "Canvas for life",
+        "collaborators": [],
+        "pins": [
+            1,
+            7,
+            12,
+            3,
+            4
+        ]
+    },
+    {
+        "id": 3,
+        "author": "",
+        "title": "Bearded animals",
+        "collaborators": [],
+        "pins": [
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "id": 4,
+        "author": "",
+        "title": "Creek trekking",
+        "collaborators": [],
+        "pins": [
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "id": 5,
+        "author": "",
+        "title": "Second weekend of July",
+        "collaborators": [],
+        "pins": [
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "id": 6,
+        "author": "",
+        "title": "Seeking water mammals",
+        "collaborators": [],
+        "pins": [
+            2,
+            3,
+            4,
+            10,
+            15,
+            12,
+            14,
+            8,
+            11
+        ]
+    },
+    {
+        "id": 7,
+        "author": "",
+        "title": "Coding in Nuclio",
+        "collaborators": [],
+        "pins": [
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "author": 3,
+        "title": "TestBoard",
+        "description": "TestBoard",
+        "collaborators": [],
+        "id": 8
+    },
+    {
+        "author": 3,
+        "title": "2342wfesaadsf",
+        "description": "we4gfadsaf",
+        "collaborators": [],
+        "id": 9
+    },
+    {
+        "author": 3,
+        "title": "TestBoard100",
+        "description": "Description of testboard1000",
+        "collaborators": [],
+        "id": 12
+    }
 ]
