@@ -24,6 +24,15 @@ const addReferencedPins = (boards) => {
   return boardsWithPinsReferences;
 };
 
+// 🎖️ Self-developed: returns the pins of a specified board
+// accessible through /boards/{boardId}/pins
+const getPinsOfBoard = (req, res) => {
+  const pins = pinsDb.all();
+  const boardId = parseInt(req.params.boardId)
+  const pinsOfTheBoard = pins.filter((pin) => pin.board === boardId);
+  return res.status(200).json(pinsOfTheBoard);
+};
+
 const getAll = (req, res) => {
   const boards = db.all();
   const boardsWithPinsReferences = addReferencedPins(boards);
@@ -71,6 +80,7 @@ module.exports = {
   update,
   getAll,
   getAllOfUser,
+  getPinsOfBoard,
   getOne,
   remove,
 };

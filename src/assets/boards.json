@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "author": "",
+        "author": 2,
         "title": "Red Green Paper",
         "collaborators": [],
         "pins": [
@@ -14,7 +14,7 @@
     },
     {
         "id": 2,
-        "author": "",
+        "author": 4,
         "title": "Canvas for life",
         "collaborators": [],
         "pins": [
@@ -27,7 +27,7 @@
     },
     {
         "id": 3,
-        "author": "",
+        "author": 6,
         "title": "Bearded animals",
         "collaborators": [],
         "pins": [
@@ -38,18 +38,21 @@
     },
     {
         "id": 4,
-        "author": "",
+        "author": 5,
         "title": "Creek trekking",
         "collaborators": [],
         "pins": [
             2,
             3,
-            4
+            5,
+            9,
+            12,
+            14
         ]
     },
     {
         "id": 5,
-        "author": "",
+        "author": 1,
         "title": "Second weekend of July",
         "collaborators": [],
         "pins": [
@@ -60,7 +63,7 @@
     },
     {
         "id": 6,
-        "author": "",
+        "author": 2,
         "title": "Seeking water mammals",
         "collaborators": [],
         "pins": [
@@ -77,13 +80,15 @@
     },
     {
         "id": 7,
-        "author": "",
+        "author": 3,
         "title": "Coding in Nuclio",
         "collaborators": [],
         "pins": [
             2,
             3,
-            4
+            4,
+            10,
+            17
         ]
     },
     {
@@ -91,20 +96,109 @@
         "title": "TestBoard",
         "description": "TestBoard",
         "collaborators": [],
-        "id": 8
+        "id": 8,
+        "pins": [
+            1,
+            3,
+            5,
+            7,
+            8
+        ]
     },
     {
         "author": 3,
         "title": "2342wfesaadsf",
         "description": "we4gfadsaf",
         "collaborators": [],
-        "id": 9
+        "id": 9,
+        "pins": [
+            1,
+            2,
+            7,
+            10
+        ]
+    },
+    {
+        "author": 2,
+        "title": "asdfadsfadsfasdfasd",
+        "description": "we4gfadsaf",
+        "collaborators": [],
+        "id": 10,
+        "pins": [
+            2,
+            4,
+            5,
+            9,
+            10
+        ]
+    },
+    {
+        "author": 5,
+        "title": "asdasddasfsf",
+        "description": "we4asdfdasfgfadsaf",
+        "collaborators": [],
+        "id": 11,
+        "pins": [
+            1,
+            4,
+            7,
+            9
+        ]
+    },
+    {
+        "author": 4,
+        "title": "hiojasdiojf0293848",
+        "description": "Description of Board",
+        "collaborators": [],
+        "id": 12,
+        "pins": [
+            3,
+            6,
+            7,
+            8,
+            12
+        ]
+    },
+    {
+        "author": 5,
+        "title": "Test for board creation",
+        "description": "Description of the test",
+        "collaborators": [],
+        "id": 13,
+        "pins": [
+            3,
+            6,
+            7,
+            8,
+            12
+        ]
     },
     {
         "author": 3,
-        "title": "TestBoard100",
-        "description": "Description of testboard1000",
+        "title": "Test for boards 999",
+        "description": "Test for boards asdpoadpoka",
         "collaborators": [],
-        "id": 12
+        "id": 14,
+        "pins": [
+            3,
+            6,
+            7,
+            8,
+            12
+        ]
+    },
+    {
+        "author": 7,
+        "title": "Board Test Creation",
+        "description": "asdasdasdad",
+        "collaborators": [],
+        "id": 15,
+        "pins": [
+            3,
+            6,
+            7,
+            8,
+            12
+        ]
     }
 ]
