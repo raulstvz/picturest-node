@@ -16,62 +16,71 @@ const userModelSchema = mongoose.Schema({
 // Compile model from schema
 const UserModel = mongoose.model('UserModel', userModelSchema);
 
-const getOne = (id) => {
-    return UserModel
-        .findOne({ "id": parseInt(id) })
-        .exec(function (err, user) {
-            if (err) return console.log(err);
-            console.log('The user is %s', user);
-            return user;
-        });
-};
-
-const getAll = () => {
-    return UserModel
-        .find({})
-        .exec(function (err, users) {
-            if (err) return console.log(err);
-            console.log(users);
-            return users;
-        });
-};
-
-const createOne = (user) => {
-    UserModel.create(user, function (err, instance) {
-        if (err) return handleError(err);
-        if (instance) {
-            //console.log(instance.name);
-            console.log('The user %s has been created', instance.name);
+const create = (user) => {
+    UserModel.create(user, function (err, user) {
+        if (err) {
+            console.log(err)
+        }
+        else {
+            console.log('The user has been created as: ', user);
         }
     });
 };
 
 
-const updateOne = (id, updateduser) => {
-    return UserModel
-        .updateOne({ "id": parseInt(id) }, updateduser)
-        .exec(function (err, updateduser) {
-            if (err) return console.log(err);
-            console.log('The user %s has been updated', updateduser);
-            return user;
+const get = async (id) => {
+    return await UserModel
+        .findOne({ "id": parseInt(id) })
+        .exec(function (err, user) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log('The user is: ', user);
+            }
         });
 };
 
+const all = async () => {
+    return await UserModel
+        .find({})
+        .exec(function (err, users) {
+            if (err) {
+                console.log(err);
+            }
+            else {
+                console.log(users);
+            }
+        });
+};
 
-const deleteOne = (id) => {
+const remove = (id) => {
     return UserModel
-        .findOne({ "id": parseInt(id) })
+        .deleteOne({ "id": parseInt(id) })
         .exec(function (err, user) {
-            if (err) return console.log(err);
-            console.log('The user %s has been deleted', user);
-            return user;
+            if (err) {
+                return console.log(err);
+            } else {
+                console.log('The user %s has been deleted', user);
+            }
+        });
+};
+
+const update = (id, updateduser) => {
+    return UserModel
+        .updateOne({ "id": parseInt(id) }, updateduser)
+        .exec(function (err, updateduser) {
+            if (err) {
+                return console.log(err);
+            } else {
+                console.log('The user %s has been updated', updateduser);
+            }
         });
 };
 
 module.exports = {
-    getOne,
-    getAll,
-    createOne,
-    updateOne,
-    deleteOne
+    create,
+    get,
+    all,
+    remove,
+    update
 };
