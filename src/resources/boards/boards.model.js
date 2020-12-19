@@ -7,6 +7,7 @@ const boardModelSchema = mongoose.Schema({
         ref: 'UserModel',
     },
     title: String,
+    description: String,
     collaborators: [],
     pins: []
 });

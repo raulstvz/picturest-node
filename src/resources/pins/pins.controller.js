@@ -13,7 +13,7 @@ const getOne = async (req, res) => {
   return res.status(404).end();
 };
 
-/*
+
 // 💯 Pins of a single user: we need to add a new controller method
 // and bind it to a user route -> UserRouter.js --> pins controller method
 // this method is called under /users/{userId}/pins
@@ -24,7 +24,7 @@ const getAllOfUser = (req, res) => {
   const filteredPins = pins.filter((pin) => pin.author === userId);
   return res.status(200).json(filteredPins);
 };
-*/
+
 
 const create = (req, res) => {
   const newPin = req.body;
@@ -46,7 +46,7 @@ const remove = (req, res) => {
 module.exports = {
   create,
   getAll,
-  //getAllOfUser,
+  getAllOfUser,
   getOne,
   update,
   remove,
