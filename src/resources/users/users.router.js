@@ -14,7 +14,7 @@ router
   .put(usersController.update)
   .delete(usersController.remove);
 
-router.route('/:userId/boards').get(boardsController.getAllOfUser);
-router.route('/:userId/pins').get(pinsController.getAllOfUser);
+//router.route('/:userId/boards').get(boardsController.getAllOfUser);
+//router.route('/:userId/pins').get(pinsController.getAllOfUser);
 
 module.exports = router;

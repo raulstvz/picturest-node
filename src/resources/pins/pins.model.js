@@ -2,11 +2,16 @@ const mongoose = require('mongoose');
 
 // Define model schema
 const pinModelSchema = mongoose.Schema({
-    id: Number,
     title: String,
     description: String,
-    author: String,
-    board: String,
+    author: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'UserModel',
+    },
+    board: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'BoardModel',
+    },
     source: String,
     comments: []
 });
@@ -14,70 +19,57 @@ const pinModelSchema = mongoose.Schema({
 // Compile model from schema
 const PinModel = mongoose.model('PinModel', pinModelSchema);
 
+//create
 const create = (pin) => {
-    PinModel.create(pin, function (err, pin) {
+    PinModel.create(pin, function (err, docs) {
         if (err) {
             console.log(err)
         }
         else {
-            console.log('The pin has been created as: ', pin);
+            console.log('Created Docs : ', docs);
         }
     });
 };
 
+//get (get one)
 const get = async (id) => {
-    return await PinModel
-        .findOne({ "id": parseInt(id) })
-        .exec(function (err, pin) {
-            if (err) {
-                console.log(err);
-            } else {
-                console.log('The pin is: ', pin);
-            }
-        });
+    let query = { _id: id };
+    return await PinModel.findOne(query).populate('author')//.populate('author', 'board');
 };
 
+//get (get all)
 const all = async () => {
-    return await PinModel
-        .find({})
-        .exec(function (err, pins) {
-            if (err) {
-                console.log(err);
-            }
-            else {
-                console.log(pins);
-            }
-        });
+    return await PinModel.find()
 };
 
-const remove = (id) => {
-    return PinModel
-        .deleteOne({ "id": parseInt(id) })
-        .exec(function (err, pin) {
-            if (err) {
-                return console.log(err);
-            } else {
-                console.log('The pin %s has been deleted', pin);
-            }
-        });
-};
-
+//update
 const update = (id, updatedpin) => {
-    return PinModel
-        .updateOne({ "id": parseInt(id) }, updatedpin)
-        .exec(function (err, updatedpin) {
-            if (err) {
-                return console.log(err);
-            } else {
-                console.log('The user %s has been updated', updatedpin);
-            }
-        });
+    let query = { _id: id };
+    PinModel.updateOne(query, updatedpin, function (err, docs) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log('Updated Docs : ', docs);
+        }
+    });
+};
+
+//remove
+const remove = (id) => {
+    let query = { _id: id };
+    PinModel.deleteOne(query, function (err, docs) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log('Deleted Docs : ', docs);
+        }
+    });
 };
 
 module.exports = {
     create,
     get,
     all,
-    remove,
-    update
+    update,
+    remove
 };

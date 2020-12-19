@@ -1,27 +1,25 @@
 const mongoose = require('mongoose');
 
 // Define model schema
-const UserSchema = mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    email: String,
-    avatar: String,
-    password: String,
-    username: String,
-    followers: [],
-    boards: []
+const boardModelSchema = mongoose.Schema({
+    author: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'UserModel',
+    },
+    title: String,
+    collaborators: [],
+    pins: []
 });
 
 // Compile model from schema
-const UserModel = mongoose.model('UserModel', UserSchema);
+const BoardModel = mongoose.model('BoardModel', boardModelSchema);
 
 //create
-const create = (user) => {
-    UserModel.create(user, function (err, docs) {
+const create = (board) => {
+    BoardModel.create(board, function (err, docs) {
         if (err) {
-            console.log(err)
-        }
-        else {
+            console.log(err);
+        } else {
             console.log('Created Docs : ', docs);
         }
     });
@@ -30,18 +28,18 @@ const create = (user) => {
 //get (get one)
 const get = async (id) => {
     let query = { _id: id };
-    return await UserModel.findOne(query)
+    return await BoardModel.findOne(query).populate('author');
 };
 
-//get (get all)
+//all (get all)
 const all = async () => {
-    return await UserModel.find({})
+    return await BoardModel.find({}).populate('author', 'username');
 };
 
 //update
-const update = (id, updateduser) => {
+const update = (id, updatedboard) => {
     let query = { _id: id };
-    UserModel.updateOne(query, updateduser, function (err, docs) {
+    BoardModel.updateOne(query, updatedboard, function (err, docs) {
         if (err) {
             console.log(err);
         } else {
@@ -53,7 +51,7 @@ const update = (id, updateduser) => {
 //remove
 const remove = (id) => {
     let query = { _id: id };
-    UserModel.deleteOne(query, function (err, docs) {
+    BoardModel.deleteOne(query, function (err, docs) {
         if (err) {
             console.log(err);
         } else {
@@ -61,7 +59,6 @@ const remove = (id) => {
         }
     });
 };
-
 
 
 module.exports = {

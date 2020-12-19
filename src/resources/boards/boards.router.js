@@ -12,7 +12,10 @@ router.route('/:id')
     .put(boardsController.update)
     .delete(boardsController.remove)
 
-//🎖️ self-developed: allows access pins of a specified board
-router.route('/:boardId/pins').get(boardsController.getPinsOfBoard);
+/*
+self-developed: access pins of a specified board
+router.route('/:boardId/pins')
+    .get(boardsController.getPinsOfBoard); 
+*/
 
 module.exports = router;
