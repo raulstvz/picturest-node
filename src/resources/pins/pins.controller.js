@@ -25,6 +25,14 @@ const getAllOfUser = (req, res) => {
   return res.status(200).json(filteredPins);
 };
 
+//Pins belonging to a single board
+const getAllOfBoard = (req, res) => {
+  const pins = pinModel.all();
+  const boardId = req.params.boardId;
+  const filteredPins = pins.filter((pin) => pin.board === boardId)
+  return res.status(200).json(filteredPins)
+}
+
 
 const create = (req, res) => {
   const newPin = req.body;
@@ -47,6 +55,7 @@ module.exports = {
   create,
   getAll,
   getAllOfUser,
+  getAllOfBoard,
   getOne,
   update,
   remove,

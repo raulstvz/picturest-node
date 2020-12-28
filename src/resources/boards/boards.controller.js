@@ -23,7 +23,6 @@ const getAllOfUser = async (req, res) => {
   return res.status(200).json(filteredBoards);
 };
 
-
 const getOne = async (req, res) => {
   const board = await boardModel.get(req.params.id);
   if (board) {
