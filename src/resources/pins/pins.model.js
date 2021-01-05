@@ -31,15 +31,27 @@ const create = (pin) => {
     });
 };
 
-//get (get one)
+//get (one)
 const get = async (id) => {
     let query = { _id: id };
-    return await PinModel.findOne(query).populate('author')//.populate('author', 'board');
+    return await PinModel.findOne(query)//.populate('author')
 };
 
-//get (get all)
+//get (all)
 const all = async () => {
     return await PinModel.find()
+};
+
+//get (by user)
+const getByUser = async (userId) => {
+    let query = { author: userId }
+    return await PinModel.find(query)
+}
+
+//get (by board)
+const getByBoard = async (boardId) => {
+    let query = { board: boardId }
+    return await PinModel.find(query)
 };
 
 //update
@@ -70,6 +82,8 @@ module.exports = {
     create,
     get,
     all,
+    getByUser,
+    getByBoard,
     update,
     remove
 };

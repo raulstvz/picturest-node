@@ -26,16 +26,22 @@ const create = (board) => {
     });
 };
 
-//get (get one)
+//get (one)
 const get = async (id) => {
     let query = { _id: id };
     return await BoardModel.findOne(query).populate('author');
 };
 
-//all (get all)
+//all (all)
 const all = async () => {
-    return await BoardModel.find({}).populate('author', 'username');
+    return await BoardModel.find()
 };
+
+//get (by user)
+const getByUser = async (userId) => {
+    let query = { author: userId }
+    return await BoardModel.find(query)
+}
 
 //update
 const update = (id, updatedboard) => {
@@ -67,5 +73,6 @@ module.exports = {
     get,
     all,
     update,
+    getByUser,
     remove
 };

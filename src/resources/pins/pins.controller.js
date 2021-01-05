@@ -13,26 +13,17 @@ const getOne = async (req, res) => {
   return res.status(404).end();
 };
 
-
-// 💯 Pins of a single user: we need to add a new controller method
-// and bind it to a user route -> UserRouter.js --> pins controller method
-// this method is called under /users/{userId}/pins
-const getAllOfUser = (req, res) => {
-  const pins = pinModel.all();
-  // 💯 Pins of a single user: the param userId is passed as a String and we need an integer:
-  const userId = parseInt(req.params.userId);
-  const filteredPins = pins.filter((pin) => pin.author === userId);
-  return res.status(200).json(filteredPins);
-};
-
-//Pins belonging to a single board
-const getAllOfBoard = (req, res) => {
-  const pins = pinModel.all();
-  const boardId = req.params.boardId;
-  const filteredPins = pins.filter((pin) => pin.board === boardId)
+//Pins belonging to a single user
+const getAllOfUser = async (req, res) => {
+  const filteredPins = await pinModel.getByUser(req.params.userId);
   return res.status(200).json(filteredPins)
 }
 
+//Pins belonging to a single board
+const getAllOfBoard = async (req, res) => {
+  const filteredPins = await pinModel.getByBoard(req.params.boardId);
+  return res.status(200).json(filteredPins)
+}
 
 const create = (req, res) => {
   const newPin = req.body;
