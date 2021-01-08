@@ -34,24 +34,24 @@ const create = (pin) => {
 //get (one)
 const get = async (id) => {
     let query = { _id: id };
-    return await PinModel.findOne(query)//.populate('author')
+    return await PinModel.findOne(query).populate('author')
 };
 
 //get (all)
 const all = async () => {
-    return await PinModel.find()
+    return await PinModel.find().populate('author')
 };
 
 //get (by user)
 const getByUser = async (userId) => {
     let query = { author: userId }
-    return await PinModel.find(query)
+    return await PinModel.find(query).populate('author')
 }
 
 //get (by board)
 const getByBoard = async (boardId) => {
     let query = { board: boardId }
-    return await PinModel.find(query)
+    return await PinModel.find(query).populate('author')
 };
 
 //update
