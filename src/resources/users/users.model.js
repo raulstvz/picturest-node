@@ -35,7 +35,13 @@ const get = async (id) => {
 
 //get (get all)
 const all = async () => {
-    return await UserModel.find({})
+    return await UserModel.find()
+};
+
+//get (get by email)
+const getByEmail = async (email) => {
+    let query = {email: email}
+    return await UserModel.findOne(query)
 };
 
 //update
@@ -68,6 +74,7 @@ module.exports = {
     create,
     get,
     all,
+    getByEmail,
     update,
     remove
 };
